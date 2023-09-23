@@ -1,94 +1,119 @@
-header {
-    width: 100%;
-    height: auto;
-    background-color: black;
-}
-.header-div {
-    max-width: 1540px;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
+.header{
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0 auto;
-    padding-right: 150px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 130px;
+    background-color: black;
+    padding-left: 5%;
+    padding-right: 7%;
     position: relative;
 }
-.logo {
-    max-width: 200px;
+.img-div {
+    max-width: 150px;
     width: 100%;
-    background-color: var(--maincolor);
-    z-index: 10;
-}
-.categories-wrapper {
-    max-width: 500px;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    max-height: 130px;
+    height: 100%;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    align-items: center;
+
 }
-.categories {
-    font-size: 20px;
+.logo{
+    max-width: 150px;
+    width: 100%;
+    max-height: 130px;
+    height: 100%;
+    cursor: pointer;
+}
+.nav-text {
     color: white;
-    font-family: var(--mainfont);
-    -webkit-transition: linear 0.3s;
-    -o-transition: linear 0.3s;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    cursor: pointer;
     transition: linear 0.3s;
 }
-.active {
-    color: var(--maincolor);
+.nav-text:hover {
+    color: #B80F14;
 }
-.categories-ul {
-    max-width: 700px;
+.nav-div {
+    max-width: 100px;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    text-align: center;
+    align-items: center;
 }
-.categories-nav {
-    max-width: 500px;
+.expanding-nav-div1 {
+    max-width: 100px;
     width: 100%;
-}
-.search-div {
-    width: 210px;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    text-align: center;
+    align-items: center;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+
 }
-.search {
-    height: 30px;
-    margin-bottom: 4px;
-    opacity: 85%;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
-    border-radius: 5px;
+.expanding-nav-div2 {
+    display: flex;
+    justify-content: center;
+    max-width: 100px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown1{
+    position: absolute;
+    right: 27%;
+    top: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 20px;
     background-color: black;
+    height: 200%;
+    max-width: 250px;
+    width: 100%;
+
+}
+.dropdown2 {
+    position: absolute;
+    right: 11%;
+    top: 100%;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: black;
+    height: 200%;
+    max-width: 250px;
+    width: 100%;
+
+}
+.expanding-nav-div1:hover .dropdown1{display: flex;}
+.expanding-nav-div2:hover .dropdown2{display: flex;}
+.dropdown1:hover {display: flex;}
+.dropdown2:hover {display: flex;}
+.dropdown-text {
     color: white;
-    font-size: 20px;
-    font-family: var(--mainfont);
+    font-family: 'Montserrat';
+    transition: linear 0.3s;
 }
-.search:focus {
-    outline: none;
+.dropdown-text:hover{
+    color: #B80F14;
 }
-.categories:hover {
-    color: var(--maincolor);
-    font-size: 21px;
+.section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.gif {
+    width: 100%;
+}
+.gif-div {
+    /* max-width: 1000px; */
+    width: 100%;
+}
+
