@@ -65,7 +65,7 @@
 
 .dropdown1{
     position: absolute;
-    right: 27%;
+    right: 26%;
     top: 100%;
     display: none;
     flex-direction: column;
@@ -80,7 +80,7 @@
 }
 .dropdown2 {
     position: absolute;
-    right: 11%;
+    right: 9%;
     top: 100%;
     display: none;
     align-items: center;
@@ -113,7 +113,96 @@
     width: 100%;
 }
 .gif-div {
-    /* max-width: 1000px; */
+    position: relative;
     width: 100%;
 }
-
+.tint-div {
+    position: absolute;
+    top: 0px;
+    z-index: 30;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+.black-bar {
+    background-color:black ;
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    bottom: 0%;
+}
+.section-logo-div {
+    display: flex;
+    position: absolute;
+    z-index: 100;
+    top: -10%;
+    left: 22%;
+}
+.section-logo {
+    max-width: 1000px;
+    width: 100%;
+    max-height: 1000px;
+    height: 100%;
+    opacity: 100%;
+}
+.section-2 {
+    background-color: black;
+    padding-top: 3%;
+}
+.section2-headline-wrapper {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.section2-headline {
+    color: white;
+    font-size: 90px;
+    font-family: 'Montserrat';
+    margin-left: 7.5%;
+    font-weight: 600;
+}
+.section2-line {
+    max-width: 1187px;
+    width: 100%;
+    background-color: white;
+    height: 2px;
+    margin-top: 20px;
+    margin-left: 1%;
+}
+.images-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+.image-div {
+    height: 375px;
+    width: auto;
+}
+.section2-images {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 15px;
+}
+.fa-chevron-right {
+    color: white;
+    font-size: 20px;
+    margin-left: -4px;
+    margin-right: 8px;
+}
+.section2-text {
+    display: flex;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    align-items: center;
+    cursor: pointer;
+}
+.section2-text:hover {
+    color: #B80F14;
+    transition: linear 0.3s;
+}
