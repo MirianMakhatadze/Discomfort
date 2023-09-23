@@ -1,0 +1,94 @@
+header {
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+.header-div {
+    max-width: 1540px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    padding-right: 150px;
+    position: relative;
+}
+.logo {
+    max-width: 200px;
+    width: 100%;
+    background-color: var(--maincolor);
+    z-index: 10;
+}
+.categories-wrapper {
+    max-width: 500px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.categories {
+    font-size: 20px;
+    color: white;
+    font-family: var(--mainfont);
+    -webkit-transition: linear 0.3s;
+    -o-transition: linear 0.3s;
+    transition: linear 0.3s;
+}
+.active {
+    color: var(--maincolor);
+}
+.categories-ul {
+    max-width: 700px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.categories-nav {
+    max-width: 500px;
+    width: 100%;
+}
+.search-div {
+    width: 210px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.search {
+    height: 30px;
+    margin-bottom: 4px;
+    opacity: 85%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: var(--mainfont);
+}
+.search:focus {
+    outline: none;
+}
+.categories:hover {
+    color: var(--maincolor);
+    font-size: 21px;
+}
