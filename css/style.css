@@ -8,6 +8,7 @@
     padding-left: 5%;
     padding-right: 7%;
     position: relative;
+    z-index: 90;
 }
 .img-div {
     max-width: 150px;
@@ -67,6 +68,7 @@
     position: absolute;
     right: 26%;
     top: 100%;
+    z-index: 101;
     display: none;
     flex-direction: column;
     align-items: center;
@@ -82,6 +84,7 @@
     position: absolute;
     right: 9%;
     top: 100%;
+    z-index: 100;
     display: none;
     align-items: center;
     flex-direction: column;
@@ -135,14 +138,14 @@
 .section-logo-div {
     display: flex;
     position: absolute;
-    z-index: 100;
-    top: -10%;
-    left: 22%;
+    z-index: 40;
+    top: 2%;
+    left: 27%;
 }
 .section-logo {
-    max-width: 1000px;
+    max-width: 800px;
     width: 100%;
-    max-height: 1000px;
+    max-height: 800px;
     height: 100%;
     opacity: 100%;
 }
@@ -204,5 +207,81 @@
 }
 .section2-text:hover {
     color: #B80F14;
+    transition: linear 0.3s;
+}
+.line-div {
+    background-color: white;
+    max-width: 1600px;
+    width: 100%;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+footer {
+    background-color: black;
+}
+.footer-wrapper {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: black;
+    padding-bottom: 10px;
+    padding-top: 2px;
+}
+.footer-headline {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 73.1428571424px;
+    color: white;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+.footer-icon-wrapper {
+    max-width: 700px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 70.4285714288px;
+}
+.fa-brands {
+    font-size: 42px;
+    color: white;
+    -webkit-transition: linear 0.3s;
+    -o-transition: linear 0.3s;
+    transition: linear 0.3s;
+}
+.fa-brands:hover {
+    color: #B80F14;
+    cursor: pointer;
+}
+.footer-text-wrapper {
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.fa-copyright {
+    margin-right: 5px;
+}
+.footer-text {
+    color: white;
+    font-family: 'Montserrat';
+}
+.footer-text:hover {
+    color: #B80F14;
+    cursor: pointer;
     transition: linear 0.3s;
 }
